@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrahakHubAI — AI-Powered Google Business Profile Management App</title>
+  <meta name="description" content="Automate Google Business Profile reviews, local SEO posts, multi-location updates, and map rank growth with GrahakHubAI.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/main.js"></script>
+  <script defer src="js/home.js"></script>
+</head>
+<body>
+  <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+  <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html">
+        <img src="assets/logo-emblem.png" alt="" width="40" height="40">
+        <span>GrahakHub<span class="brand-ai">AI</span></span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <button
+          class="menu-button"
+          type="button"
+          popovertarget="site-menu"
+          popovertargetaction="toggle"
+          aria-controls="site-menu"
+        >
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+          <span>Menu</span>
+        </button>
+
+        <ul id="site-menu" class="site-menu" popover="auto">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+          <li><a href="delete-account.html">Delete Account</a></li>
+          <li class="nav-cta-item">
+            <a class="nav-cta-link" href="#simulator">Try AI Demo</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-mesh" aria-hidden="true">
+        <div class="hero-grid-pattern"></div>
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+      </div>
+
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <span class="eyebrow is-green" data-reveal style="--stagger: 0;">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/>
+            </svg>
+            Google Business Automation for Growing Businesses
+          </span>
+
+          <h1 id="main-content" tabindex="-1" data-reveal style="--stagger: 1;">
+            Turn Your <span class="gradient-text">Google Business Profile</span> Into an AI Growth Engine
+          </h1>
+
+          <p class="hero-subtitle" data-reveal style="--stagger: 2;">
+            GrahakHubAI automates customer review replies, schedules high-converting Google updates, optimizes local SEO signals, and keeps every branch synchronized—right from one smart mobile and web app.
+          </p>
+
+          <div class="hero-actions" data-reveal style="--stagger: 3;">
+            <a class="btn btn-primary" href="#simulator">
+              <svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              Launch Live AI Demo
+            </a>
+            <a class="btn btn-secondary" href="#features">
+              Explore Features
+            </a>
+          </div>
+
+          <div class="hero-trust-row" data-reveal style="--stagger: 4;">
+            <div class="hero-trust-item">
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6 9 17l-5-5"/>
+              </svg>
+              <span>Official Google OAuth 2.0</span>
+            </div>
+            <div class="hero-trust-item">
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6 9 17l-5-5"/>
+              </svg>
+              <span>24/7 AI Review Autopilot</span>
+            </div>
+            <div class="hero-trust-item">
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6 9 17l-5-5"/>
+              </svg>
+              <span>Single Store to 500+ Locations</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Animated Motion Graphic Showcase Stage -->
+        <div class="hero-stage" data-reveal style="--stagger: 2;">
+          <div class="floating-chip chip-growth" aria-hidden="true">
+            <span class="chip-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                <polyline points="16 7 22 7 22 13"></polyline>
+              </svg>
+            </span>
+            <span>+312% Map Calls</span>
+          </div>
+
+          <div class="floating-chip chip-rating" aria-hidden="true">
+            <span class="chip-icon is-blue">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </span>
+            <span>4.9 ★ Avg Rating</span>
+          </div>
+
+          <div class="stage-card">
+            <div class="stage-topbar">
+              <div class="stage-brand-pill">
+                <img src="assets/logo-emblem.png" alt="GrahakHubAI brand emblem" width="32" height="32">
+                <span>AI Command Center</span>
+              </div>
+              <span class="live-badge">
+                <span class="live-dot" aria-hidden="true"></span>
+                GBP Synced
+              </span>
+            </div>
+
+            <div class="stage-centerpiece">
+              <svg class="orbit-ring-svg" aria-hidden="true" viewBox="0 0 220 220" fill="none">
+                <defs>
+                  <linearGradient id="orbitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#38bdf8"/>
+                    <stop offset="50%" stop-color="#1850eb"/>
+                    <stop offset="100%" stop-color="#10b981"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="110" cy="110" r="96" stroke="url(#orbitGrad)" stroke-width="2" stroke-dasharray="10 8" opacity="0.55"/>
+                <circle cx="110" cy="110" r="76" stroke="#4c2ce6" stroke-width="1.5" stroke-dasharray="4 10" opacity="0.35"/>
+                <circle cx="110" cy="14" r="5" fill="#10b981"/>
+                <circle cx="192" cy="158" r="4.5" fill="#1850eb"/>
+              </svg>
+
+              <img
+                class="emblem-hero"
+                src="assets/logo-emblem.png"
+                alt="GrahakHubAI storefront location and AI growth emblem"
+                width="120"
+                height="120"
+                fetchpriority="high"
+              >
+
+              <svg class="sparkle-glyph sparkle-1" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L14.2 9.8L22 12L14.2 14.2L12 22L9.8 14.2L2 12L9.8 9.8L12 2Z"/>
+              </svg>
+              <svg class="sparkle-glyph sparkle-2" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L14.2 9.8L22 12L14.2 14.2L12 22L9.8 14.2L2 12L9.8 9.8L12 2Z"/>
+              </svg>
+            </div>
+
+            <div class="stage-tabs" role="tablist" aria-label="Live automation preview modes">
+              <button class="stage-tab" type="button" role="tab" id="tab-reviews" aria-selected="true" aria-controls="panel-reviews" tabindex="0">Review AI</button>
+              <button class="stage-tab" type="button" role="tab" id="tab-posts" aria-selected="false" aria-controls="panel-posts" tabindex="-1">Auto Posts</button>
+              <button class="stage-tab" type="button" role="tab" id="tab-rank" aria-selected="false" aria-controls="panel-rank" tabindex="-1">Rank Pulse</button>
+            </div>
+
+            <div class="stage-live-panel" id="panel-reviews" role="tabpanel" aria-labelledby="tab-reviews" data-stage-panel>
+              <div class="stage-panel-head">
+                <span>New Review • Ananya K.</span>
+                <span class="stage-stars" aria-label="5 out of 5 stars">★★★★★</span>
+              </div>
+              <p style="font-size: 0.88rem; color: var(--ink-secondary);">
+                "Quick service and transparent pricing. Best experience in town!"
+              </p>
+              <div class="stage-ai-reply">
+                <strong>AI Auto-Reply Sent in 12s</strong>
+                <p>Thank you, Ananya! Our team loves keeping service fast and transparent. Looking forward to welcoming you again!</p>
+              </div>
+            </div>
+
+            <div class="stage-live-panel" id="panel-posts" role="tabpanel" aria-labelledby="tab-posts" data-stage-panel hidden>
+              <div class="stage-panel-head">
+                <span>Scheduled GBP Offer</span>
+                <span class="tag-pill">Friday 10:00 AM</span>
+              </div>
+              <div class="stage-ai-reply">
+                <strong>Local SEO Post Ready</strong>
+                <p>"Weekend Special: Enjoy 15% off walk-in consultations! Tap Directions on Google Maps to visit our flagship branch."</p>
+              </div>
+              <p style="font-size: 0.82rem; color: var(--ink-muted);">
+                Auto-tagged with neighborhood keywords &amp; call-to-action button.
+              </p>
+            </div>
+
+            <div class="stage-live-panel" id="panel-rank" role="tabpanel" aria-labelledby="tab-rank" data-stage-panel hidden>
+              <div class="stage-panel-head">
+                <span>Google Maps Impressions (30d)</span>
+                <span class="tag-pill">+42.8% Growth</span>
+              </div>
+              <div class="stage-mini-bars" aria-hidden="true">
+                <div class="mini-bar" style="height: 36%; --bar-i: 0;"></div>
+                <div class="mini-bar" style="height: 48%; --bar-i: 1;"></div>
+                <div class="mini-bar" style="height: 44%; --bar-i: 2;"></div>
+                <div class="mini-bar" style="height: 62%; --bar-i: 3;"></div>
+                <div class="mini-bar" style="height: 75%; --bar-i: 4;"></div>
+                <div class="mini-bar" style="height: 86%; --bar-i: 5;"></div>
+                <div class="mini-bar" style="height: 100%; --bar-i: 6;"></div>
+              </div>
+              <p style="font-size: 0.84rem; color: var(--ink-secondary);">
+                Top 3 Local Pack visibility achieved for 14 high-intent keywords.
+              </p>
+            </div>
+
+            <div class="stage-footer-bar">
+              <span>Live motion preview</span>
+              <button id="motion-toggle" class="motion-control-btn" type="button">
+                <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <rect x="6" y="4" width="4" height="16" rx="1"></rect>
+                  <rect x="14" y="4" width="4" height="16" rx="1"></rect>
+                </svg>
+                <span class="motion-toggle-label">Pause animations</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Metrics Band -->
+    <section class="metrics-band" aria-label="Platform performance metrics">
+      <div class="container metrics-grid">
+        <div class="metric-card" data-reveal style="--stagger: 0;">
+          <div class="metric-value" data-count-to="98.4" data-count-decimals="1" data-count-suffix="%">98.4%</div>
+          <div class="metric-label">Review Response Rate</div>
+        </div>
+        <div class="metric-card" data-reveal style="--stagger: 1;">
+          <div class="metric-value" data-count-to="18" data-count-decimals="0" data-count-suffix=" sec">18 sec</div>
+          <div class="metric-label">Average AI Reply Speed</div>
+        </div>
+        <div class="metric-card" data-reveal style="--stagger: 2;">
+          <div class="metric-value" data-count-to="3.4" data-count-decimals="1" data-count-suffix="x">3.4x</div>
+          <div class="metric-label">More Google Map Actions</div>
+        </div>
+        <div class="metric-card" data-reveal style="--stagger: 3;">
+          <div class="metric-value" data-count-to="120" data-count-decimals="0" data-count-suffix="K+">120K+</div>
+          <div class="metric-label">GBP Posts &amp; Replies Automated</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Features Bento Grid -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="eyebrow">Intelligent GBP Suite</span>
+          <h2>Everything Your Business Needs to Dominate Google Maps</h2>
+          <p>
+            Built specifically for local stores, clinics, restaurants, agencies, and multi-city franchises looking to turn searches into loyal customers.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <article class="bento-card is-wide" data-reveal style="--stagger: 0;">
+            <div class="feature-icon">
+              <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                <path d="M8 10h8"></path>
+                <path d="M8 14h4"></path>
+              </svg>
+            </div>
+            <h3>AI Review Auto-Responder in Your Brand Voice</h3>
+            <p>
+              Automatically detect new 1-to-5-star Google reviews, understand customer sentiment, and publish warm, human-sounding replies that reinforce your local keywords—supporting auto-pilot for positive ratings and instant approval alerts for sensitive feedback.
+            </p>
+            <div class="bento-visual-bar">
+              <span>Multilingual Replies • Brand Tone Memory</span>
+              <span class="tag-pill">Zero Missed Reviews</span>
+            </div>
+          </article>
+
+          <article class="bento-card" data-reveal style="--stagger: 1;">
+            <div class="feature-icon is-green">
+              <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h3>AI Google Post Scheduler</h3>
+            <p>
+              Generate festive offers, product updates, and event posts with a single tap. Schedule weeks of active Google Business updates to signal freshness to Google Search.
+            </p>
+          </article>
+
+          <article class="bento-card" data-reveal style="--stagger: 2;">
+            <div class="feature-icon is-indigo">
+              <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3>Local Map Pack &amp; Keyword Insights</h3>
+            <p>
+              Track direction clicks, website visits, phone calls, and search discovery phrases across neighborhoods to see exactly what drives store footfall.
+            </p>
+          </article>
+
+          <article class="bento-card" data-reveal style="--stagger: 3;">
+            <div class="feature-icon is-green">
+              <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </div>
+            <h3>Profile Guard &amp; Holiday Hours Sync</h3>
+            <p>
+              Prevent unauthorized third-party edits to your hours or phone number and push accurate holiday schedules across every location simultaneously.
+            </p>
+          </article>
+
+          <article class="bento-card" data-reveal style="--stagger: 4;">
+            <div class="feature-icon">
+              <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </div>
+            <h3>Smart Q&amp;A &amp; Service Catalog</h3>
+            <p>
+              Pre-populate frequently asked customer questions and optimize service descriptions so high-intent local buyers choose you first.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Live AI GBP Simulator -->
+    <section id="simulator" class="section simulator-section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="eyebrow is-green">Interactive Sandbox</span>
+          <h2>Experience GrahakHubAI Live in Your Browser</h2>
+          <p>
+            Pick a real Google Business scenario and choose a brand tone to see how our AI crafts instant, SEO-friendly replies and posts.
+          </p>
+        </div>
+
+        <div class="simulator-shell" data-reveal>
+          <div class="simulator-controls">
+            <div>
+              <span class="sim-group-label">1. Select Business Scenario</span>
+              <div class="sim-scenario-list">
+                <button class="sim-scenario-btn" type="button" data-scenario="five-star" aria-pressed="true">
+                  <span>5★ Customer Praise Review</span>
+                  <span aria-hidden="true">→</span>
+                </button>
+                <button class="sim-scenario-btn" type="button" data-scenario="three-star" aria-pressed="false">
+                  <span>3★ Feedback &amp; Service Recovery</span>
+                  <span aria-hidden="true">→</span>
+                </button>
+                <button class="sim-scenario-btn" type="button" data-scenario="festive-post" aria-pressed="false">
+                  <span>Weekend Festive Offer Post</span>
+                  <span aria-hidden="true">→</span>
+                </button>
+                <button class="sim-scenario-btn" type="button" data-scenario="hours-sync" aria-pressed="false">
+                  <span>12-Branch Holiday Hours Sync</span>
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <span class="sim-group-label">2. Choose AI Brand Tone</span>
+              <div class="tone-pills">
+                <button class="tone-btn" type="button" data-tone="warm" aria-pressed="true">Warm &amp; Friendly</button>
+                <button class="tone-btn" type="button" data-tone="professional" aria-pressed="false">Professional</button>
+                <button class="tone-btn" type="button" data-tone="seo" aria-pressed="false">Growth SEO</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="simulator-output">
+            <div class="sim-prompt-card">
+              <div class="sim-meta-row">
+                <span id="sim-badge">Google Review • 5.0 ★★★★★</span>
+                <span id="sim-author">Priya S. • Local Guide</span>
+              </div>
+              <p id="sim-prompt" class="sim-text"></p>
+            </div>
+
+            <div class="sim-ai-card">
+              <div class="sim-ai-header">
+                <span class="sim-ai-badge">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/>
+                  </svg>
+                  GrahakHubAI Generated Draft
+                </span>
+                <button id="sim-regenerate-btn" class="btn btn-secondary btn-sm" type="button">Regenerate</button>
+              </div>
+              <p id="sim-output-text" class="sim-text"></p>
+              <div id="sim-keywords" class="sim-keywords"></div>
+            </div>
+
+            <div class="sim-action-bar">
+              <button id="sim-publish-btn" class="btn btn-primary" type="button">Publish Reply to Google</button>
+              <div id="sim-status" class="sim-status" role="status" aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="eyebrow">3-Minute Setup</span>
+          <h2>From Sign-In to Autopilot Growth in Three Steps</h2>
+          <p>No complicated dashboards or agency retainers required. Connect your Google Business Profile safely in seconds.</p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card" data-reveal style="--stagger: 0;">
+            <div class="step-number">1</div>
+            <h3>Connect Google Business Profile</h3>
+            <p style="color: var(--ink-secondary);">
+              Sign in securely with official Google OAuth 2.0. Choose the storefront locations you want GrahakHubAI to manage—without ever sharing your Google password.
+            </p>
+          </article>
+
+          <article class="step-card" data-reveal style="--stagger: 1;">
+            <div class="step-number">2</div>
+            <h3>Set Your AI Tone &amp; Guardrails</h3>
+            <p style="color: var(--ink-secondary);">
+              Pick auto-reply rules (e.g., auto-publish 4–5★ replies and notify you for 1–3★ reviews), add business highlights, and choose your preferred posting schedule.
+            </p>
+          </article>
+
+          <article class="step-card" data-reveal style="--stagger: 2;">
+            <div class="step-number">3</div>
+            <h3>Watch Calls &amp; Map Views Climb</h3>
+            <p style="color: var(--ink-secondary);">
+              GrahakHubAI keeps your profile active every week, responds to customers in seconds, and sends clear growth reports straight to your phone.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section id="faq" class="section" style="background: var(--bg-surface); border-block-start: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header" data-reveal style="margin-block-end: 2rem;">
+          <span class="eyebrow">Questions &amp; Answers</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Transparent answers on security, Google API compliance, automation, and account control.</p>
+        </div>
+
+        <div class="accordion-header-row" data-reveal>
+          <span style="font-weight: 700; color: var(--ink-secondary);">Everything you need to know before connecting your profile</span>
+          <button
+            class="btn btn-secondary btn-sm"
+            type="button"
+            commandfor="home-faq-list"
+            command="--toggle-all"
+            aria-expanded="false"
+          >
+            <span class="label-expand">Expand all</span>
+            <span class="label-collapse">Collapse all</span>
+          </button>
+        </div>
+
+        <div id="home-faq-list" class="accordion-list" data-reveal>
+          <details class="accordion-item">
+            <summary>Is GrahakHubAI safe to connect to my Google Business Profile?</summary>
+            <div class="accordion-body">
+              <p>
+                Yes. GrahakHubAI uses official Google OAuth 2.0 authorization and strictly adheres to the Google API Services User Data Policy. You grant scoped permissions only to the Business Profile locations you select, and you can revoke access anytime inside Google Account settings or in our app.
+              </p>
+            </div>
+          </details>
+
+          <details class="accordion-item">
+            <summary>Can I review AI replies before they go live on Google?</summary>
+            <div class="accordion-body">
+              <p>
+                Absolutely. You have full control: enable instant Autopilot for 4-star and 5-star reviews while holding 1–3 star reviews in an approval queue, or require manual one-tap approval for every reply and post.
+              </p>
+            </div>
+          </details>
+
+          <details class="accordion-item">
+            <summary>Does GrahakHubAI support multiple branches or agency clients?</summary>
+            <div class="accordion-body">
+              <p>
+                Yes! Whether you run a single neighborhood café or manage 500+ franchise locations, GrahakHubAI lets you group profiles, sync holiday hours in bulk, and compare location-level insights side by side.
+              </p>
+            </div>
+          </details>
+
+          <details class="accordion-item">
+            <summary>How do I delete my GrahakHubAI account or disconnect my data?</summary>
+            <div class="accordion-body">
+              <p>
+                You can permanently delete your account inside the GrahakHubAI mobile app under Settings &rarr; Account &amp; Security &rarr; Delete Account, or submit an instant deletion request from our dedicated <a href="delete-account.html">Delete Account page</a>.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Banner -->
+    <section id="get-started" class="section">
+      <div class="container">
+        <div class="cta-banner" data-reveal>
+          <div>
+            <h2>Ready to Put Your Google Business Profile on Autopilot?</h2>
+            <p>
+              Join growing local businesses using GrahakHubAI to reply faster, rank higher on Google Maps, and turn every search into a new customer.
+            </p>
+            <div class="hero-actions" style="margin-block-start: 1.5rem;">
+              <a class="btn btn-secondary" href="#simulator">Test Live AI Simulator</a>
+              <a class="btn btn-secondary" style="background: rgba(255,255,255,0.14); color: #ffffff; border-color: rgba(255,255,255,0.28);" href="privacy-policy.html">Read Privacy Policy</a>
+            </div>
+          </div>
+
+          <div class="cta-visual-card">
+            <img
+              src="assets/logo-full.png"
+              alt="GrahakHubAI — Google Business Automation for Growing Businesses"
+              width="240"
+              height="201"
+              loading="lazy"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="footer-logo-wrap" href="index.html">
+            <img src="assets/logo-emblem.png" alt="" width="40" height="40" loading="lazy">
+            <span>GrahakHubAI</span>
+          </a>
+          <p>
+            AI-powered Google Business Profile management and local growth automation app built for ambitious local businesses and multi-location brands.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h2>Product</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#features">AI Features</a></li>
+            <li><a href="index.html#simulator">Live AI Demo</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2>Trust &amp; Legal</h2>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="delete-account.html">Delete Account</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 GrahakHubAI. All rights reserved.</span>
+        <span>Support: <a href="mailto:support@grahakhubai.com" style="color: #93c5fd;">support@grahakhubai.com</a></span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
