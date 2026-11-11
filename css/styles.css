@@ -106,7 +106,7 @@
     --in-oklab: ;
     --in-oklch: ;
 
-    /* Brand Palette derived from GrahakHubAI Logo */
+    /* Brand Palette derived from LocalPilot Logo */
     --navy-950: #060b28;
     --navy-900: #081036;
     --navy-800: #141f52;
@@ -238,7 +238,7 @@
   }
 
   h1 {
-    font-size: clamp(2.15rem, 1.35rem + 3vw, 3.85rem);
+    font-size: clamp(2rem, 1.3rem + 2.4vw, 3.35rem);
     text-wrap: balance;
   }
 
@@ -846,7 +846,7 @@
   /* Hero Section */
   .hero {
     position: relative;
-    padding-block: clamp(2.5rem, 1.5rem + 3.5vw, 5rem) clamp(3.5rem, 2.5rem + 4vw, 5.5rem);
+    padding-block: clamp(1.5rem, 1rem + 1.8vw, 2.75rem) clamp(2.5rem, 1.8rem + 2.5vw, 4rem);
     background: var(--grad-surface-glow), var(--bg-canvas);
     overflow: hidden;
   }
@@ -908,7 +908,7 @@
 
   .hero-copy {
     display: grid;
-    gap: 1.35rem;
+    gap: 1.05rem;
     justify-items: start;
   }
 
@@ -956,18 +956,18 @@
     position: relative;
     display: grid;
     place-items: center;
-    padding: 1rem 0.5rem;
+    padding: 0.75rem 1rem;
   }
 
   .stage-card {
     position: relative;
     inline-size: 100%;
-    max-inline-size: 34rem;
+    max-inline-size: 33rem;
     background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(18px);
     border: 1px solid rgba(24, 80, 235, 0.14);
     border-radius: var(--radius-xl);
-    padding: 1.4rem;
+    padding: 1.25rem;
     box-shadow: var(--shadow-lg);
     transform-style: preserve-3d;
     transition: transform 0.25s ease-out;
@@ -978,7 +978,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 0.75rem;
-    padding-block-end: 1rem;
+    padding-block-end: 0.85rem;
     border-block-end: 1px solid var(--border-subtle);
   }
 
@@ -1019,19 +1019,19 @@
     position: relative;
     display: grid;
     place-items: center;
-    padding-block: 1.35rem 1rem;
+    padding-block: 0.85rem 0.75rem;
   }
 
   .orbit-ring-svg {
-    inline-size: 13.5rem;
-    block-size: 13.5rem;
+    inline-size: 11.5rem;
+    block-size: 11.5rem;
     position: relative;
   }
 
   .emblem-hero {
     position: absolute;
-    inline-size: 7.4rem;
-    block-size: 7.4rem;
+    inline-size: 6.25rem;
+    block-size: 6.25rem;
     object-fit: contain;
     filter: drop-shadow(0 16px 24px rgba(24, 80, 235, 0.22));
   }
@@ -1043,13 +1043,13 @@
   }
 
   .sparkle-1 {
-    inset-block-start: 0.75rem;
-    inset-inline-end: 2.5rem;
+    inset-block-start: 0.65rem;
+    inset-inline-end: 3rem;
   }
 
   .sparkle-2 {
-    inset-block-end: 1.25rem;
-    inset-inline-start: 2.25rem;
+    inset-block-end: 0.85rem;
+    inset-inline-start: 3rem;
     color: var(--blue-500);
   }
 
@@ -1060,7 +1060,7 @@
     background: var(--bg-surface-muted);
     padding: 0.3rem;
     border-radius: var(--radius-md);
-    margin-block-end: 0.9rem;
+    margin-block-end: 0.8rem;
   }
 
   .stage-tab {
@@ -1086,10 +1086,15 @@
     background: var(--bg-canvas);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
-    padding: 1rem;
+    padding: 0.95rem;
     display: grid;
-    gap: 0.7rem;
-    min-block-size: 10.5rem;
+    gap: 0.65rem;
+    min-block-size: 9.5rem;
+    align-content: start;
+  }
+
+  .stage-live-panel[hidden] {
+    display: none;
   }
 
   .stage-panel-head {
@@ -1197,13 +1202,15 @@
   }
 
   .chip-growth {
-    inset-block-start: 1.5rem;
-    inset-inline-start: -1.75rem;
+    inset-block-start: 5.5rem;
+    inset-inline-start: -0.75rem;
+    pointer-events: none;
   }
 
   .chip-rating {
-    inset-block-end: 3.5rem;
-    inset-inline-end: -1.25rem;
+    inset-block-start: 11.25rem;
+    inset-inline-end: -0.5rem;
+    pointer-events: none;
   }
 
   .chip-icon {
@@ -2495,6 +2502,10 @@
    Layer: Utilities
    ========================================================================== */
 @layer utilities {
+  [hidden]:not([hidden="until-found"]) {
+    display: none !important;
+  }
+
   .visually-hidden:where(:not(:focus-within, :active)) {
     position: absolute !important;
     clip-path: inset(50%) !important;

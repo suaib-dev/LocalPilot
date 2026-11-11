@@ -255,7 +255,7 @@
       summaryScope.textContent =
         scope === 'google-disconnect'
           ? 'Revoke Google Business Profile access & delete synced profile cache'
-          : 'Permanent GrahakHubAI account & all associated data deletion';
+          : 'Permanent LocalPilot account & all associated data deletion';
     }
 
     dialog.showModal();
@@ -279,7 +279,7 @@
     const randomCode = Math.random().toString(36).slice(2, 8).toUpperCase();
     const datePart = new Date().toISOString().slice(0, 10).replace(/-/g, '');
 
-    if (refIdEl) refIdEl.textContent = `GH-DEL-${datePart}-${randomCode}`;
+    if (refIdEl) refIdEl.textContent = `LP-DEL-${datePart}-${randomCode}`;
     if (receiptEmailEl) receiptEmailEl.textContent = email;
     if (receiptScopeEl) {
       receiptScopeEl.textContent =
